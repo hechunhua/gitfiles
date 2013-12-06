@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$type['title']}-{$GLOBALS['S']['title']}</title>
+<meta name="keywords" content="{$type['keywords']} " />
+<meta name="description" content="{$type['description']} " />
+<link href="{$GLOBALS['skin']}style/g.css" rel="stylesheet" type="text/css" />
+<link href="{$GLOBALS['skin']}style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$GLOBALS['WWW']}include/js/jquery.myapp.min.js"></script>
+</head>
+<body>
+<div id="page"> {include="head.html"}
+  <div id="content" class="head-expand" style="background:#f3f3f3;"> 
+    <!--BEGIN all--> 
+    <!--导航菜单模块--> 
+    {include="banner.html"}
+    <div class="wpm">
+      <div class="main" >
+        <div class="content">
+          <div class="position">当前位置：{$positions}</div>
+          <ul class="c list">
+            {foreach $lists as $v}
+            <li><span{if(newest($v['addtime'],24))} style="color:red"{/if}>[{fun date('Y-m-d',$v['addtime'])}]</span><a href="{$v['url']}" style="{$v['style']}" target="_blank">{$v['title']}</a></li>
+            {/foreach}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix" style="background:#FFF; border-bottom:1px solid #ddd; padding:20px 0; line-height:30px;">
+      <div class="wpm clearfix" style="background:#FFF; width:990px; margin:0 auto">
+        <h2 style="margin:0px;padding:0px;font-size:14px;color:#404040;height:30px;line-height:30px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#EBEBEB;font-family:tahoma, arial, 宋体;white-space:normal;"> 加盟金丝缘流程 </h2>
+        <div class="wbBoxH-bd joinFlow-bd" style="border-top-width:1px;border-top-style:solid;border-top-color:#FFFFFF;padding:25px 0px 25px 20px;position:relative;font-family:tahoma, arial, 宋体;white-space:normal;">
+          <ul class="joinFlowList clearfix" style="margin:0px;padding:0px;list-style:none;zoom:1;">
+            <li style="margin:0px;padding:0px;float:left;width:178px;border:6px solid #C2C2C2;position:relative;">
+              <h3 class="flow-hd" style="margin:0px;padding:0px;font-size:12px;position:relative;width:178px;height:70px;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);width:178px;height:70px;position:absolute;left:0px;top:0px;z-index:2;background-position:0px 0px;background-repeat:no-repeat no-repeat;"></b><b style="background-image:url({$GLOBALS['skin']}images/jm.png);width:178px;height:70px;position:absolute;left:0px;top:0px;z-index:2;background-position:0px 0px;background-repeat:no-repeat no-repeat;"> </b>STEP 01 </h3>
+              <div class="flow-bd" style="background-image:url({$GLOBALS['skin']}images/jm.png);height:140px;padding:0px 10px;overflow:hidden;text-align:center;background-position:0px -133px;background-repeat:no-repeat no-repeat;">
+                <h4 style="margin:0px;padding:3px 0px 0px;font-size:14px;height:28px;line-height:28px;overflow:hidden;"> <span style="font-size:12px;">检测企业支付宝账号</span> </h4>
+                <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> <span style="font-size:12px;">1．注册企业版支付宝账号</span> </p>
+                <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> <span style="font-size:12px;">2．未完成企业认证的账号可以先报名入驻金丝缘</span> </p>
+                </p>
+              </div>
+            </li>
+            <li class="joinFlowAngle" style="margin:0px;padding:0px;float:left;width:50px;border:none;position:relative;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);display:block;width:12px;height:21px;margin:80px auto 0px;background-position:-285px -253px;background-repeat:no-repeat no-repeat;"></b> </li>
+            <li style="margin:0px;padding:0px;float:left;width:178px;border:6px solid #C2C2C2;position:relative;">
+              <div class="flow step2">
+                <h3 class="flow-hd" style="margin:0px;padding:0px;font-size:12px;position:relative;width:178px;height:70px;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);width:178px;height:70px;position:absolute;left:0px;top:0px;z-index:2;background-position:0px -70px;background-repeat:no-repeat no-repeat;"></b>STEP 02 </h3>
+                <div class="flow-bd" style="background-image:url({$GLOBALS['skin']}images/jm.png);height:140px;padding:0px 10px;overflow:hidden;text-align:center;background-position:0px -133px;background-repeat:no-repeat no-repeat;">
+                  <h4 style="margin:0px;padding:3px 0px 0px;font-size:14px;height:28px;line-height:28px;overflow:hidden;"> 填写/提交信息及资料 </h4>
+                  <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> 1. 填写申请信息，提交资质 </p>
+                  <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> 2. 选择店铺名和域名，在线签署服务协议 </p>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="joinFlowAngle" style="margin:0px;padding:0px;float:left;width:50px;border:none;position:relative;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);display:block;width:12px;height:21px;margin:80px auto 0px;background-position:-285px -253px;background-repeat:no-repeat no-repeat;"></b> </li>
+            <li style="margin:0px;padding:0px;float:left;width:178px;border:6px solid #C2C2C2;position:relative;">
+              <div class="flow step3">
+                <h3 class="flow-hd" style="margin:0px;padding:0px;font-size:12px;position:relative;width:178px;height:70px;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);width:178px;height:70px;position:absolute;left:0px;top:0px;z-index:2;background-position:-178px 0px;background-repeat:no-repeat no-repeat;"></b>STEP 03 </h3>
+                <div class="flow-bd" style="background-image:url({$GLOBALS['skin']}images/jm.png);height:140px;padding:0px 10px;overflow:hidden;text-align:center;background-position:0px -133px;background-repeat:no-repeat no-repeat;">
+                  <h4 style="margin:0px;padding:3px 0px 0px;font-size:14px;height:28px;line-height:28px;overflow:hidden;"> 等待金丝缘审核 </h4>
+                  <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> 金丝缘7个工作日内给到审核结果 </p>
+                  <p style="margin-top:0px;margin-bottom:0px;padding:0px;"> <br />
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="joinFlowAngle" style="margin:0px;padding:0px;float:left;width:50px;border:none;position:relative;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);display:block;width:12px;height:21px;margin:80px auto 0px;background-position:-285px -253px;background-repeat:no-repeat no-repeat;"></b> </li>
+            <li style="margin:0px;padding:0px;float:left;width:178px;border:6px solid #C2C2C2;position:relative;">
+              <div class="flow step4">
+                <h3 class="flow-hd" style="margin:0px;padding:0px;font-size:12px;position:relative;width:178px;height:70px;"> <b style="background-image:url({$GLOBALS['skin']}images/jm.png);width:178px;height:70px;position:absolute;left:0px;top:0px;z-index:2;background-position:-178px -70px;background-repeat:no-repeat no-repeat;"></b>STEP 04 </h3>
+                <div class="flow-bd" style="background-image:url({$GLOBALS['skin']}images/jm.png);height:140px;padding:0px 10px;overflow:hidden;text-align:center;background-position:0px -133px;background-repeat:no-repeat no-repeat;">
+                  <h4 style="margin:0px;padding:3px 0px 0px;font-size:14px;height:28px;line-height:28px;overflow:hidden;"> 办理后续手续，开店 </h4>
+                  <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> 1．签署协议、保存档案 </p>
+                  <p align="left" style="margin-top:0px;margin-bottom:0px;padding:0px;"> 2．冻结保证金，缴纳技术服务年费 </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h2 style="margin:0px;padding:0px;font-size:14px;color:#404040;height:30px;line-height:30px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#EBEBEB;font-family:tahoma, arial, 宋体;white-space:normal;"> 阅读加盟详细内容 </h2>
+        <div class="col-main clearfix" style="margin:0px;padding:20px;min-height:1px;font-size:14px;color:#666666;line-height:30px;font-family:tahoma, arial, 宋体, sans-serif;white-space:normal;"> {$type['body']} </div>
+      </div>
+    </div>
+  </div>
+  {include="bottom.html"} </div>
+</body>
+</html>

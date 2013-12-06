@@ -1,0 +1,145 @@
+/*global style*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;*line-height:1.5}h1,h2,h3,h4,h5,h6{font-size:100%}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}small{font-size:12px}ul,ol{list-style:none}a{text-decoration:none}a:hover{text-decoration:underline}sup{vertical-align:text-top}sub{vertical-align:text-bottom}legend{color:#000}fieldset,img{border:0}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}.hidden{display:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}html{zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+.guding_bg{width:2200px;height:100%;margin-left:-495px;overflow:hidden;position:absolute;}
+.mr0{margin-right:0px!important;}
+
+#page,#header,#content,#footer{margin-left:auto;margin-right:auto}
+/*.col-main{float:left;width:100%;min-height:1px}.col-sub,.col-extra{float:left}*/
+.layout:after,.main-wrap:after{content:'\20';display:block;height:0;clear:both}
+.layout,.main-wrap{zoom:1}
+.grid-m .main-wrap{width:100%}
+
+/*统一设置宽度*/
+#header,#footer{margin-left:0!important;margin-right:0!important;min-width:950px;padding-left:0!important;padding-right:0!important;width:auto!important}
+#bd,#ft,#content .layout,#footer{width:990px;margin-left:auto;margin-right:auto}
+#bd{position:relative;overflow:hidden;}
+#ft{overflow:hidden}
+
+/*公用图片*/
+#mallLogo .mlogo s,
+#mallLogo .slogo,
+#mallLogo .flagship-icon,#mall-desc .go-home,
+#jsySearch button,#jsySearch button:hover{background:url(../images/icon1.png) no-repeat}
+#hd{max-height:150px;position:relative;z-index:119;overflow:hidden}
+.head-expand #hd{max-height:none;overflow:visible;position:static;z-index:1}
+
+/*金丝缘顶部*/
+#header{background:#b10000!important;margin-top:-30px!important;background:#b10000;*zoom:1}
+#headerCon,#headerNav .headerNav-con{width:950px!important;margin:0 auto}
+#headerCon{padding-top:30px;height:63px}
+#mallLogo{float:left;padding-top:18px;position:relative}
+#mallLogo .mlogo,#mallLogo .slogo{float:left}
+#mallLogo a{position:relative;display:block;color:#fff;text-indent:0!important}
+.hasSubLogo #mallLogo a:hover{text-decoration:none;border-bottom:2px solid #fff}
+#mallLogo .mlogo{padding-right:7px}
+#mallLogo .mlogo a{height:27px;font-size:22px!important;width:160px;overflow:hidden}
+#mallLogo .mlogo s{position:absolute;display:block;top:0;cursor:pointer;background-position:-2px -30px!important;height:30px!important;width:160px!important}
+#mallLogo .slogo{padding-top:6px;padding-left:17px;background-position:-174px -30px}
+#mallLogo .slogo a{font-family:'Lucida Grande','\5fae\8f6f\96c5\9ed1';font-size:15px;height:22px;line-height:22px;overflow:hidden;background-color:#b10000}
+#mallLogo a,#mallLogo .ww-light,#mallLogo .flagship-icon{display:inline-block;*display:inline;*zoom:1}
+#mallLogo .slogo{height:22px;width:310px}
+#mallLogo .flagship-icon{background-position:-120px -120px;*vertical-align:top;width:53px;height:16px;position:relative;top:3px;left:2px;text-indent:-9999px;overflow:hidden}
+#mallLogo .slogo a:hover,#mallLogo .slogo a:active{text-decoration:underline;border:0}
+
+/*金丝缘搜索*/
+#jsySearch{float:right;width:380px;padding-top:10px}
+.mallSearch-form{background-color:#980101!important;border:none!important}
+#jsySearch legend{display:none}
+#jsySearch fieldset{position:relative}
+#jsySearch .mallSearch-input{background:#fff;border-radius:2px;height:34px;position:relative;margin-left:0}
+#jsySearch label{visibility:hidden;color:#666;font-size:12px;line-height:32px;height:32px;position:absolute;left:8px;top:0;_top:2px;z-index:1}
+#jsySearch #mq{color:#000;margin:0;position:absolute;left:0;z-index:2;width:312px;height:20px;line-height:20px;padding:7px 3px 7px 5px;border:0;border-radius:2px 0 0 2px;font-weight:900;}
+#jsySearch button{float:right;width:60px;border:0;font-size:12px;font-weight:bold;cursor:pointer;color:#fff;background-color:#462824;background-position:0 -120px;line-height:30 px\9;padding-bottom:3px;padding-bottom:0 \9;height:34px;overflow:hidden;text-indent:-9999px}
+#jsySearch button:hover{background-color:#866150;background-position:0 -154px}
+button::-moz-focus-inner{border:0;padding:0;margin:0}
+#jsySearch .currShopBtn{background-position:-60px -120px}
+#jsySearch .currShopBtn:hover{background-position:-60px -154px}
+
+/*金丝缘导航头*/
+.headerNav{background-color:#8f0100;height:40px;position:relative;z-index:10000; clear:both;}
+.headerNav .headerNav-con{height:40px;position:relative;width:950px;margin:0 auto;*zoom:1}
+.headerNav .headerNav-con:before,.headerNav .headerNav-con:after{display:table;content:"";line-height:0}
+.headerNav .headerNav-con:after{clear:both}
+.headerNav .icon-triangle{border-color:#da1101 #8f0100 #8f0100;border-style:solid;border-width:4px;font-size:0;height:0;line-height:0;position:absolute;right:11px;top:18px;width:0}
+.headerNav .member-hd .icon-triangle{display:none}
+.headerNav #shop-info-new .enter-shop,.headerNav #shop-info-new .collection,.headerNav #shop-info-new b{background-image:url(../images/icon2.png);display:inline-block;vertical-align:top}
+.headerNav #shop-info-new{float:right;position:relative;border-left:1px dotted #a53433}
+.headerNav #shop-info-new .icon-triangle{border-color:#da1101 #8f0100 #8f0100;right:11px}
+.headerNav #shop-info-new .main-info{padding:0 23px 0 11px;width:192px;height:40px;overflow:hidden;position:relative}
+.headerNav #shop-info-new .main-info label.shop,.headerNav #shop-info-new .main-info .dsr-info{display:inline-block;height:40px;line-height:40px}
+.headerNav #shop-info-new .main-info .dsr-info{margin:0;width:auto;overflow:visible;position:static}
+.headerNav #shop-info-new .main-info a,.headerNav #shop-info-new .main-info em{_display:inline-block;_height:40px;_line-height:40px}
+.headerNav #shop-info-new .main-info a{cursor:pointer}
+.headerNav #shop-info-new .main-info label.shop{color:#fe584a}
+.headerNav #shop-info-new .main-info .dsr-info,.headerNav #shop-info-new .main-info a,.headerNav #shop-info-new .main-info em{color:white}
+.headerNav #shop-info-new .main-info b{display:inline-block;height:14px;_overflow:hidden;width:28px;background-position:-73px -34px;margin:14px 3px 0 9px;margin-top:13 px\9;*margin-top:1px;_margin-top:14px}
+.headerNav #shop-info-new .main-info b.lower{background-position:-35px -34px}
+.headerNav #shop-info-new .main-info b.fair{background-position:-111px -34px}
+.headerNav #shop-info-new .main-info .count{margin-left:4px;font-weight:bold}
+.headerNav #shop-info-new:hover .icon-triangle{border-color:#6a0000 #6a0000 #da1101!important;top:14px;border-width:5 px\9;right:10 px\9;top:13 px\9}
+.headerNav #shop-info-new:hover .main-info{background-color:#6a0000}
+
+.jsy-banner{*zoom:1;position:relative;width:990px;overflow:hidden;margin-bottom:0}
+.jsy-banner:after{content:'\20';display:block;height:0;clear:both}
+.jsy-banner .skin-box-bd{*zoom:1;border-color:#d5d5d5;border-width:0 1px 1px;border-style:solid;background:none no-repeat 0 0 #fff;color:#2953a6}
+.jsy-banner .skin-box-bd:after{content:'\20';display:block;height:0;clear:both}
+.jsy-banner .skin-box-bd a{color:#2953a6}
+.jsy-banner .skin-box-bd{background:none no-repeat 0 0 transparent;position:relative;margin-bottom:0;border:0}
+/*金丝缘底部*/
+#copyright,#mall-desc{width:990px!important;margin:0 auto}
+#mall-desc dt span{display:block;height:25px;width:73px;overflow:hidden}
+#ensure dt span{background-position:0 -154px}
+#beginner dt span{background-position:0 -174px}
+#payment dt span{background-position:0 -195px}
+#seller dt span{background-position:0 -215px}
+#mall-desc{position:relative;margin-bottom:25px;text-align:left;zoom:1}
+#mall-desc:after{content:"";display:block;clear:both;height:0}
+#mall-desc dl{float:left;width:220px}
+#mall-desc dl#payment{margin-left:145px;_display:inline}
+#mall-desc dl#seller{float:right;width:180px}
+#mall-desc dt{margin-bottom:3px;padding-bottom:4px;font-family:'\5fae\8f6f\96c5\9ed1';font-size:18px;font-weight:500}
+#mall-desc dl#seller dt{margin-right:0}
+#mall-desc dd{margin-right:40px}
+#mall-desc dl a,#mall-desc dl dd span{display:block;height:22px;line-height:1.8;color:#666;white-space:nowrap}
+#mall-desc dl i{display:inline-block;width:16px;height:16px;vertical-align:text-bottom;overflow:hidden;background-position:-182px -166px}
+#mall-desc .go-home{position:absolute;left:50%;top:18px;margin-left:-74px;height:81px;width:82px;overflow:hidden;line-height:999px;background-position:-90px -188px}
+#mall-desc .go-home a{display:block}
+#footer{border-top:1px solid #d1d7dc;clear:both;margin:10px auto;text-align:center;padding-top:15px;background-position:0 -235px;background-repeat:repeat-x;background:#fff;position:relative}
+#footer p{padding:5px 0}
+#footer p strong{font-weight:normal}
+#footer p a{margin-right:3px;color:#36c}
+
+#copyright{text-align:center;padding:10px 0;}
+#copyright .version{padding:0 22px;vertical-align:middle;text-decoration:none;}
+#copyright .version img{vertical-align:middle;}
+#copyright .designer{color:#999;vertical-align:bottom;}
+#copyright .designer a{color:black;vertical-align:bottom;text-decoration:none;}
+
+
+/*另外独立设置 css 调用图片等style*/
+#page #content #bd {width: 100%}
+#content {background: url(about:blank) repeat left 0;}
+#header{background:#b10000 url(../images/topbg.gif) center top no-repeat!important;}
+
+/*导航one*/
+#hd{background: url(../images/banner_1.jpg) repeat-x center 0;margin-bottom: 0px;}
+
+/*导航two*/
+#hd {background: url(../images/banner_5.gif) no-repeat center 0;margin-bottom: 0px;}
+#hd .jsy-banner{width:auto;height: 150px !important; overflow:hidden;}
+#hd .jsy-banner .skin-box-bd{height:116px; width:990px!important; margin:0 auto;background: none repeat scroll 0 0 transparent !important;}
+#hd .jsy-banner .skin-box-bd p{display:block;}
+#hd .jsy-banner .skin-box-bd p.l{float:left; width:210px; height:110px;}
+#hd .jsy-banner .skin-box-bd p.r{float:right;height:110px; width:780px; overflow:hidden;}
+#hd .jsy-banner .skin-box-bd p.r img{width:780px; height:110px;}
+#hd .jsy-banner .banner-box{background:#000 url(../images/bannerbg.jpg) repeat-x 0 0!important;height:34px!important;}
+#hd .jsy-banner .banner-box ul{display:block; width:990px;height:34px; margin:0 auto;}
+#hd .jsy-banner .banner-box ul li{ height:34px; line-height:34px;  overflow:hidden; width:100px; float:left; color:#FFF; text-align:center; margin-right:5px;}
+#hd .jsy-banner .banner-box ul li.first{background:#900 url(../images/bannerhover.jpg) repeat-x 0 0; width:202px;}
+#hd .jsy-banner .banner-box ul li.hover{background:#900;}
+#hd .jsy-banner .banner-box ul li a{color:#FFF; display:block;padding:0 10px; font-size:14px; font-family:"微软雅黑"}
+#hd .jsy-banner .banner-box ul li a:hover{background:#900;}
+
+#toTop{background:url(../images/toTop.png) no-repeat 0 0;}
+#toTop{width:56px;height:56px;display:block;position:fixed;right:25px;bottom:45px;opacity:0.3;filter:alpha(opacity=30);}
+#toTop:hover{opacity:1;filter:alpha(opacity=100);}

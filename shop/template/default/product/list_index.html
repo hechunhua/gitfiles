@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$type['title']}-{$GLOBALS['S']['title']}</title>
+<meta name="keywords" content="{$type['keywords']} " />
+<meta name="description" content="{$type['description']} " />
+<link href="{$GLOBALS['skin']}style/g.css" rel="stylesheet" type="text/css" />
+<link href="{$GLOBALS['skin']}style/product.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$GLOBALS['WWW']}include/js/jquery.myapp.min.js"></script>
+</head>
+<body>
+<div id="page">
+{include="head.html"}
+<div id="content" class="head-expand" style="background:#f3f3f3;">
+    <!--BEGIN all-->
+    <!--导航菜单模块-->
+    {include="banner.html"}
+    <div id="bd" >
+      <div class="layout grid-m">
+        <div class="col-main">
+          <div class="main-wrap">
+          	<div class="guding_bg" style="display:block;background:url({$GLOBALS['skin']}images/bodybg.jpg) no-repeat fixed center top transparent;"> </div>
+          	<div class="J_TModule" data-title="分类专区"> 
+            	<div class="ModuleType clearfix">
+                	<div class="tit">分类专区</div>
+                    {loop table="classtype" pid="$type["tid"]" mshow="1" not="1" as="t"}
+                    <div class="boxlist">
+                        <h3><span>{if(!empty($t['litpic']))} <img src="{$t['litpic']}">{else} {$t['classname']}{/if}</span></h3>
+                        <ul>
+                            {loop table="product" tid="$t["tid"]" trait="4" limit="5"} 
+                        	<li{if($vn==1)} class="largepic"{/if}>
+                            	<a href="{$v['url']}"><img src="{$GLOBALS['skin']}images/s.gif" defers="{$v['litpic']}"></a>
+                                <a href="{$v['url']}" class="t">{fun newstr($v['title'],20)}</a>
+                                <span>优惠特价：<u>{$v['mgold']}</u> 元</span>
+                            </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                    {/loop}
+            	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{include="bottom.html"}
+</div>
+</body>
+</html>

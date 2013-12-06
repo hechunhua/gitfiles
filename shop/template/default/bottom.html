@@ -1,0 +1,42 @@
+<div id="copyright">
+  <div class="shop-info"> <span class="designer">金丝缘专卖店:您的最佳选择 | 制作By <a target="_blank" href="#">ley</a></span> </div>
+</div>
+<div id="footer">
+  <div id="mall-desc">
+    <dl id="ensure">
+      <dt><span>加盟我们</span></dt>
+      <dd> <span>欢迎您加入金丝缘</span> <span>充满发展，值得信赖</span> <span>您的最佳选择</span></dd>
+    </dl>
+    <dl id="beginner">
+      <dt><span>关于我们</span></dt>
+      <dd>{loop table="classtype" tid="1"}<a href="{$v['url']}">公司介绍</a>{/loop}
+      {loop table="classtype" tid="1"}<a href="{$v['url']}">产品介绍</a>{/loop}
+      {loop table="classtype" tid="1"}<a href="{$v['url']}">团队力量</a>{/loop}
+      {loop table="classtype" tid="1"}<a href="{$v['url']}">公司荣誉</a>{/loop}
+      </dd>
+    </dl>
+    <dl id="payment">
+      <dt><span>支付方式</span></dt>
+      <dd> <a href="#" target="_blank">支付宝快捷支付</a> <a href="#" target="_blank">支付宝余额付款</a> <a href="#" target="_blank">支付宝卡付款</a> <a href="#" target="_blank">货到付款</a> </dd>
+    </dl>
+    <dl id="seller">
+      <dt><span>商家服务</span></dt>
+      <dd> <a href="#" target="_blank" >商家中心</a> <a href="#" target="_blank" >金丝缘智库</a> <a href="#" target="_blank" >金丝缘规则</a> <a href="#" target="_blank" >物流服务</a> </dd>
+    </dl>
+    <h4 class="go-home"><a href="#" target="_blank" title="返回金丝缘首页" >返回金丝缘首页</a></h4>
+  </div>
+  <div id="copyright">
+    <p id="footer-tmallinfo">{loop table="classtype" mshow="1" limit="7"}<a href="{$v['url']}">{$v['classname']}</a> | {/loop} 金丝缘，您的独家选择</p>
+    <p id="footer-otherlink"> 友情链接： {loop table="links"}<a href="{$v['gourl']}" target="_blank">{$v['name']}</a> | {/loop} <a href="{$GLOBALS['WWW']}" target="_blank">金丝缘本店</a></p>
+    <p>Copyright&nbsp;2012-2013, 版权所有 JSY.COM <br />
+      网络文化经营许可证：<a href="#" target="_blank">金丝缘[2013]0234-028号</a></p>
+  </div>
+</div>
+<!--顶部login滚动和返回顶部 srt-->
+<a href="#" target="_self" id="toTop" title="返回顶部" onclick="window.scrollTo(0,0);return false" style="display:none;"></a>
+<script type="text/javascript">function toTopHide(){document.documentElement.scrollTop+document.body.scrollTop>630?document.getElementById("toTop").style.display="block":document.getElementById("toTop").style.display="none"}window.onscroll=toTopHide;</script>
+<!--[if lte IE 6]><style type="text/css">#toTop{position:absolute;right:15px;bottom:45px;}</style><![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript">function topFixed(){document.documentElement.scrollTop>400?document.getElementById("toTop").style.display="block":document.getElementById("toTop").style.display="none",document.getElementById("toTop").style.top=document.documentElement.clientHeight+document.documentElement.scrollTop-document.getElementById("toTop").clientHeight-45+"px"}window.onscroll=topFixed,window.resize=topFixed,topFixed()</script>
+<![endif]-->
+<!--顶部login滚动和返回顶部 end-->

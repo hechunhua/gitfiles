@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$GLOBALS['S']['title']}</title>
+<meta name="keywords" content="{$GLOBALS['S']['keywords']} " />
+<meta name="description" content="{$GLOBALS['S']['description']} " />
+<link href="{$GLOBALS['skin']}style/g.css" rel="stylesheet" type="text/css" />
+<link href="{$GLOBALS['skin']}style/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$GLOBALS['WWW']}include/js/jquery.myapp.min.js"></script>
+</head>
+<body>
+<div id="page">
+{include="head.html"}
+<div id="content" class="head-expand" style="background:#f3f3f3;">
+    <!--BEGIN all-->
+    <!--导航菜单模块-->
+    {include="banner.html"}
+    <!--全屏轮播模块-->
+    <div id="bd" >
+      <div class="layout grid-m">
+        <div class="col-main">
+          <div class="main-wrap">
+            <div class="J_TModule" data-title="全屏轮播模块">
+              <div class="Fullscreen">
+                <div class="guding_bg" style="display:block;background:url({$GLOBALS['skin']}images/bodybg.jpg) no-repeat fixed center top transparent;"> </div>
+                <div class="Fullscreenbox">
+                  <div class="dati1" style="height:500px;">
+                    <div class="alunbo">
+                      <div class="visibility_h prev" title="上一张"> <b class="page_ico"></b> </div>
+                      <div class="visibility_h next" title="下一张"> <b class="page_ico"></b> </div>
+                      <div class="lb_zhu">
+                        <div class="con_lb" id="focus">
+                          <ul>{loop table="ads" taid="1" limit="3"}<li><a class="bigpic" href="{$v['gourl']}" style="height:500px;width:2200px;background:url({$v['adfile']}) no-repeat scroll center center transparent;" target="_blank"></a></li>{/loop}</ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--贴图开始-->
+            <div class="J_TModule" data-title="正文贴图模块"> 
+            	<div class="MouleBox clearfix">
+                <h3><img alt="最新热销" border="0" height="84" width="980" src="{$GLOBALS['skin']}images/s.gif" defers="{$GLOBALS['skin']}images/ban.jpg"/></h3>
+                <ul>{loop table="product" trait="3" limit="6"} <li class="t{$vn}"><a href="{$v['url']}" target="_blank"><img border="0" src="{$GLOBALS['skin']}images/s.gif" defers="{$v['litpic']}"/></a></li>{/loop}</ul>
+                </div>
+            </div>
+            
+            <div class="J_TModule" data-title="正文贴图模块"> 
+				<div class="MouleTop">
+                    <h3><img alt="最新推荐" border="0" height="84" width="980" src="{$GLOBALS['skin']}images/s.gif" defers="{$GLOBALS['skin']}images/ban1.gif"/></h3>
+                    <ul>{loop table="product" trait="5" limit="6"} <li><a href="{$v['url']}" target="_blank"><img border="0" height="444" width="324" src="{$GLOBALS['skin']}images/s.gif" defers="{$v['litpic']}"/></a></li>{/loop}</ul>
+                </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--广告模块-->
+    <div id="ft" >
+      <div class="layout grid-m">
+        <div class="col-main">
+          <div class="main-wrap">
+          	<div class="J_TModule" data-title="广告模块">
+          		<div class="ad">加入广告。。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END all-->
+</div>
+{include="bottom.html"}
+</div>
+<script type="text/javascript" src="{$GLOBALS['skin']}js/index.js"></script>
+</body>
+</html>

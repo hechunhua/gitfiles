@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$type['title']}-{$GLOBALS['S']['title']}</title>
+<meta name="keywords" content="{$type['keywords']} " />
+<meta name="description" content="{$type['description']} " />
+<link href="{$GLOBALS['skin']}style/g.css" rel="stylesheet" type="text/css" />
+<link href="{$GLOBALS['skin']}style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$GLOBALS['WWW']}include/js/jquery.myapp.min.js"></script>
+</head>
+<body>
+<div id="page">
+{include="head.html"}
+<div id="content" class="head-expand" style="background:#f3f3f3;">
+    <!--BEGIN all-->
+    <!--导航菜单模块-->
+    {include="banner.html"}
+    <div class="wpm list">
+      <div class="tab11"></div>
+      <div class="tab1 tab1b main">
+        <div class="content">
+           <div class="position">当前位置：{$positions}</div>
+           <div class="c f2">{$type['body']}</div>
+        </div>
+      </div>
+      <div class="tab12 mban"></div>
+    </div>
+</div>
+{include="bottom.html"}
+</div>
+</body>
+</html>

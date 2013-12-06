@@ -1,0 +1,6 @@
+/*!
+ * jquery-IMG Switching
+ * lhb(ley) Create to jinsiyuan
+ * date 2013-11-13
+ */
+$(function(){function g(b){var c=-b*a;$("#focus ul").stop(!0,!1).animate({left:c},300),$("#focus .btn span").stop(!0,!1).animate({opacity:"0.4"},300).eq(b).stop(!0,!1).animate({opacity:"1"},300)}for(var d,a=$("#focus").width(),b=$("#focus ul li").length,c=0,e="<div class='btnBg'></div><div class='btn'>",f=0;b>f;f++)e+="<span></span>";e+="</div>",$("#focus").append(e),$("#focus .btnBg").css("opacity",.5),$("#focus .btn span").css("opacity",.4).mouseenter(function(){c=$("#focus .btn span").index(this),g(c)}).eq(0).trigger("mouseenter"),$(".alunbo .prev").click(function(){c-=1,-1==c&&(c=b-1),g(c)}),$(".alunbo .next").click(function(){c+=1,c==b&&(c=0),g(c)}),$("#focus ul").css("width",a*b),$("#focus").hover(function(){clearInterval(d)},function(){d=setInterval(function(){g(c),c++,c==b&&(c=0)},4e3)}).trigger("mouseleave")}),function(a){a.fn.preload=function(b){var c=a.extend({},a.fn.preload.defaults,b);o=a.meta?a.extend({},c,this.data()):c;var d=this.length,e=0;return this.each(function(){var b=a(this);a("<img/>").load(function(){++e,e==d&&o.onComplete()}).attr("src",b.attr("src"))})},a.fn.preload.defaults={onComplete:function(){return!1}}}(jQuery);

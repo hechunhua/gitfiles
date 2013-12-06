@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$type['title']}-{$GLOBALS['S']['title']}</title>
+<meta name="keywords" content="{$type['keywords']} " />
+<meta name="description" content="{$type['description']} " />
+<link href="{$GLOBALS['skin']}style/g.css" rel="stylesheet" type="text/css" />
+<link href="{$GLOBALS['skin']}style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$GLOBALS['WWW']}include/js/jquery.myapp.min.js"></script>
+</head>
+<body>
+<div id="page"> {include="head.html"}
+  <div id="content" class="head-expand" style="background:#f3f3f3;"> 
+    <!--BEGIN all--> 
+    <!--导航菜单模块--> 
+    {include="banner.html"}
+    <div class="wpm">
+      <div class="main" >
+        <div class="content">
+          <div class="position">当前位置：{$positions}</div>
+          <ul class="c list">
+            {foreach $lists as $v}
+            <li><span{if(newest($v['addtime'],24))} style="color:red"{/if}>[{fun date('Y-m-d',$v['addtime'])}]</span><a href="{$v['url']}" style="{$v['style']}" target="_blank">{$v['title']}</a></li>
+            {/foreach}
+          </ul>
+      </div>
+    </div>
+    </div>
+    <div class="clearfix" style="background:#FFF; border-bottom:1px solid #ddd; padding:20px 0; line-height:30px;">
+    	<div class="wpm clearfix" style="background:#FFF; width:990px; margin:0 auto">
+          <p> <span style="line-height:1.5;"> </span> </p>
+          <div class="col-sub" style="margin:0px 30px 0px 0px;padding:0px;float:left;zoom:1;width:230px;overflow:hidden;color:#404040;font-family:tahoma, arial, 宋体, sans-serif;white-space:normal;"> <img title="" src="{$type['litpic']}" width="230" /> </div>
+          <div class="col-main" style="margin:0px;padding:0px;float:left;width:670px;min-height:1px;font-size:14px;color:#666666;line-height:30px;font-family:tahoma, arial, 宋体, sans-serif;white-space:normal;">
+            {$type['body']}
+          </div>
+          </div>
+    </div>
+  </div>
+  {include="bottom.html"} </div>
+</body>
+</html>

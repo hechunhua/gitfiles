@@ -1,0 +1,17 @@
+<div id="hd">
+  <div class="skin-box jsy-banner">
+    <div class="skin-box-bd">
+      <p class="l"><img style="float:none;margin:0px;" src="{$GLOBALS['skin']}images/logo.gif"/></p>
+      <p class="r"><img style="float:none;margin:0px;" src="{$GLOBALS['skin']}images/top-ad.gif"/></p>
+    </div>
+    <div class="banner-box">
+      <ul>
+        <li class="first"><a href="javascript:;">本店商品精彩展示</a></li>
+        <li><a href="{$GLOBALS['WWW']}">首页</a></li>
+        {loop table="classtype" mshow="1" limit="7"}
+          <li><a href="{$v['url']}">{$v['classname']}</a></li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+</div>
